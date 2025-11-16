@@ -1,9 +1,45 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
-const Navbar = () => {
+export default function Navbar() {
   return (
-    <div>Navbar</div>
-  )
-}
+    <nav className="bg-[#D9D9D9] text-black p-3 flex items-center justify-between sticky top-0 bg-white shadow z-50">
+      {/* Logo */}
+      <img
+        src="/letter-nx-logo-design-nx-logo-with-square-shape-in-black-colors-free-template-free-vector.webp"
+        alt="logo"
+        className="h-10 ml-30"
+      />
+     <div className="flex items-center border rounded-md px-2 py-1 ml-88">
+  <input
+    type="search"
+    placeholder="Search"
+    className="outline-none flex-1"
+  />
+  <img
+    src="/search-interface-symbol.png"
+    alt="search"
+    className="w-5 h-5 ml-2"
+  />
+</div>
 
-export default Navbar
+
+      {/* Navigation links */}
+      <ul className="flex space-x-6 mr-30" >
+        <li>
+          <Link href="/" className="hover:text-gray-400">Home</Link>
+        </li>
+        <li>
+          <Link href="/product" className="hover:text-gray-400">Product</Link>
+        </li>
+        <li>
+          <Link href="/features" className="hover:text-gray-400">Features</Link>
+        </li>
+        <li>
+          <Link href="/about" className="hover:text-gray-400">About</Link>
+        </li>
+      </ul>
+    </nav>
+  
+  );
+}
