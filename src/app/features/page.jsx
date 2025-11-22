@@ -1,12 +1,12 @@
-import Features from '@/components/Feature'
-import React from 'react'
+import Features from "../../components/Feature";
+import React from "react";
 
 const feature = () => {
   return (
     <div>
-        <Features/>
+      <Features />
     </div>
-  )
-}
+  );
+};
 
-export default feature
+export default feature;

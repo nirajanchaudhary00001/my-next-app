@@ -15,13 +15,13 @@ const Hero = () => {
 
         <div className="mt-8 flex justify-center lg:justify-start gap-4">
           <a
-            href="/shop"
+            href="/product"
             className="px-6 py-3 bg-black text-white font-medium rounded-md hover:bg-gray-800 transition"
           >
             Shop Now
           </a>
           <a
-            href="/collection"
+            href="/features"
             className="px-6 py-3 border border-black text-black font-medium rounded-md hover:bg-black hover:text-white transition"
           >
             Explore Collection
